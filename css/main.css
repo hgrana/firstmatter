@@ -1,0 +1,66 @@
+/*
+	Overall
+*/
+* {
+	font-family: 'Encode Sans', sans-serif;
+}
+
+.transiton {
+	-webkit-transition: color 333ms ease;
+	-moz-transition: color 333ms ease;
+	-ms-transition: color 333ms ease;
+	-o-transition: color 333ms ease;
+	transition: color 333ms ease;
+}
+
+a {
+	color: #333;
+}
+
+p{
+	margin: 20px 0px;
+}
+
+a:hover {
+	color: #e7e7e7;
+	text-decoration: none;
+}
+
+.inner-page-title {
+	text-align: center;
+}
+
+.page-content{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.line{
+	width: 100%;
+	height: 5px;
+	display: block;
+	background-color: #333;
+}
+.thin-line{
+	width: 100%;
+	height: 1px;
+	display: block;
+	background-color: #333;
+}
+
+.post p{
+	padding: 0px 15px;
+}
+.post img{
+	max-width: 50%;
+	padding: 0px 15px;
+}
+
+.post-info{
+	font-size: 0.8em;	
+}
+
+
+footer{
+	padding: 30px 0px;
+}
