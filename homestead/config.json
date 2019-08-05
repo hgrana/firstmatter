@@ -1,0 +1,10 @@
+{
+  "steads": [
+    "steadContent",
+    "steadImg",
+    "steadInfo",
+    "steadTitle"
+  ],
+  "separator": true,
+  "separatorContent": "<span class='thin-line'></span>"
+}
