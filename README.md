@@ -1,3 +1,3 @@
-# Project Homestead
+# First Matter
 
-Building a static website from simple files.
+Site generated using Homestead.
