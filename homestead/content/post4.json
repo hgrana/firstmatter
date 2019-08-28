@@ -1,0 +1,18 @@
+{
+  "steadTitle": "<h2>XSS: O meio, não o fim.</h2>",
+  "steadContent": [
+    "<p>Segundo a OWASP (2018), cross-site scripting (XSS) é um tipo de ataque de injeção, que no caso códigos maliciosos são injetados em outrora sites confiáveis. Vulnerabilidades que permitem esses ataques acontecerem são populares e ocorrem sempre que uma aplicação não valida e/ou criptografa um input de dados do usuário para o sistema.</p>",
+    "<p>Um atacante pode usar XSS para enviar códigos maliciosos para um usuário desavisado. O navegador do usuário final não tem como saber se o código é confiável e o executa. Dessa maneira o código malicioso poderá ter acesso a quaisquer cookies, tokens ou dados sensíveis do usuário que são armazenados pelo navegador afetado. Em alguns casos, pode ser que o usuário tenha o Document Object Model (DOM) alterado, comprometendo a usabilidade do site e aumentando as chances de invasão.</p>",
+    "<h3>Tipos de Ataques XSS</h3>",
+    "<p>XSS Armazenado ou Persistente (Tipo 1): XSS Armazenado ocorre quando o código malicioso está armazenado no servidor do site, nos bancos de dados, logs, mensagens, campo de comentários, etc.</p>",
+    "<p>XSS Refletido ou Não-Persistente (Tipo 2): De acordo com OWASP (2018), XSS Refletido ocorre quando o código malicioso é armazenado fora do servidor, como em uma mensagem de erro, um resultado de busca ou qualquer resposta que inclui algum tipo de dado que foi enviado para o servidor.</p>",
+    "<p>XSS Baseado em DOM (Tipo 0): XSS baseado em DOM ocorre, segundo a OWASP (2018), quando todo o ataque é feito pela parte de interação do usuário com a aplicação Web.</p>",
+    "<h3>Impactos do Cross-site Scripting</h3>",
+    "<p>Cross-site scripting é provavelmente um dos riscos mais prevalentes nas aplicações Web e mesmo assim é um dos mais negligenciados. Os principais riscos estão associados ao fato que o usuário é diretamente afetado pela invasão, sendo ele o principal vetor de ataque.</p>",
+    "<p>Um dos principais vetores de ataque são os sequestros de contas legítimas, normalmente o atacante consegue acesso roubando o cookie de sessão do usuário. Esse tipo de ataque faz com que o atacante tenha total acesso a tudo o que esse usuário tem: dados privados e funcionalidades passíveis apenas para o usuário. Esse tipo de ataque pode ser conduzido colocando scripts em campos vulneráveis da aplicação Web (XSS tipo 1).</p>",
+    "<p>A OWASP provém inúmeras listas de prevenção a aplicações Web, uma delas sendo contra ataques XSS e a todas as suas variações.</p>",
+    "<p>Aqui você encontra o material: <a href='https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md'>OWASP Cheat Sheet Series: XSS</a></p>"
+  ],
+  "steadInfo": "<p class='post-info'>28 de agosto de 2019 | Web Security</p>",
+  "steadImg": "<img src='images/rest-gogh.jpeg'>"
+}
