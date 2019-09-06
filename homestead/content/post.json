@@ -5,5 +5,6 @@
     "<p>Se ficou interessado em ver o que está rolando nos bastidores, entre -> programming</p>"
   ],
   "steadInfo": "<p class='post-info'>28 de maio de 2018 | Coding</p>",  
-  "steadImg": "<img src='images/monetofwaterloo.jpg'>"
+  "steadImg": "<img src='images/monetofwaterloo.jpg'>",
+  "steadImgInfo": "<span class='stead-img-info'>Waterloo Bridge - Claude Monet (1903)</span>"
 }

@@ -58,6 +58,12 @@ stead img{
 	padding: 0px 15px;
 }
 
+stead span.stead-img-info{
+	font-size: 0.8em;
+	display: block;
+	padding: 0px 15px;
+}
+
 .post-info{
 	font-size: 0.8em;	
 }
@@ -74,6 +80,10 @@ footer{
 
 	stead img{
 		max-width: 100%;
+		padding: 0px;
+	}
+
+	stead span.stead-img-info{
 		padding: 0px;
 	}
 }

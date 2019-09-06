@@ -1,6 +1,7 @@
 {
   "steads": [
     "steadContent",
+    "steadImgInfo",
     "steadImg",
     "steadInfo",
     "steadTitle"

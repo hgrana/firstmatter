@@ -16,12 +16,13 @@
     "<p>Em 2005, um rapaz de 19 anos de idade lançou o vírus de computador conhecido como “Samy”. Talvez o vírus de computador mais rápido da história que mudou a segurança na Internet para sempre.</p>",
     "<p>Na época, o MySpace permitia a utilização de código HTML para customização de perfil do usuário, isso ocasionou uma falha grave na segurança do sistema permitindo que um usuário final, com algumas linhas de código JavaScript, fizesse mudanças não esperadas na plataforma. Apesar do vírus se espalhar rapidamente, ele era inofensivo. O maior impacto do vírus foi mostrar como os sites na época estavam mal configurados e expostos a vulnerabilidades que as próprias empresas não tinham conhecimento.</p>",
     "<p>Na época, aproximadamente 80-90% dos sites poderiam sofrer com algum tipo de ataque XSS de acordo com a OWASP (2015). Foram criados protocolos que poderiam ser seguidos para mitigar tais riscos e minimizar tais vulnerabilidades. Após 10 anos, aproximadamente 47% dos sites podem sofrer com ataques XSS.</p>",
-    "<h3>Como se proteger?</h3>",
+    "<h3>Como se Proteger?</h3>",
     "<p>A OWASP provém inúmeras listas de prevenção a aplicações Web, uma delas sendo contra ataques XSS e a todas as suas variações.</p>",
     "<p>Aqui você encontra o material: <a href='https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md'>OWASP Cheat Sheet Series: XSS</a></p>",
     "<br>",
     "<p>Fonte: <a href='https://drive.google.com/file/d/1y-qbWG2uPpoMMWlzjrEel8pPySwdsbqR/view?usp=sharing' target='_blank'>Segurança em Aplicações Web: Cross-site Scripting (XSS)</a></p>"
   ],
   "steadInfo": "<p class='post-info'>28 de agosto de 2019 | Web Security</p>",
-  "steadImg": "<img src='images/rest-gogh.jpeg'>"
+  "steadImg": "<img src='images/rest-gogh.jpeg'>",
+  "steadImgInfo": "<span class='stead-img-info'>A Sesta - Van Gogh (1890)</span>"
 }
