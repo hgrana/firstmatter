@@ -31,7 +31,7 @@ a:hover {
 }
 
 .page-content{
-	width: 1024px;
+	width: 840px;
 	margin: 0 auto;
 }
 
@@ -50,7 +50,7 @@ a:hover {
 
 stead p{
 	padding: 0px 15px;
-	line-height: 20px;
+	line-height: 1.5;
 	text-align: justify;
 }
 stead img{
