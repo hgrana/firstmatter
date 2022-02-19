@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="First Matter is a website about my hobbies and work.">
+  <meta name="description" content="First Matter is a website about my hobbies and work. You will mostly found things about coding, photography and sports.">
   <title>First Matter</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -18,7 +18,7 @@
   <section class="content">
     <span class='thin-line'></span>
     <h2>Racing Cars</h2>
-    <p class='post-info'>11 de março de 2021 | Software Development</p>
+    <p class='post-info'>March, 11 of 2021 | Software Development</p>
     <img src='images/the-promenade.jpg' alt="La Femme à l'ombrelle - Claude Monet (1875)" width="420" height="588">
     <span class='stead-img-info'>La Femme à l'ombrelle - Claude Monet (1875)</span>
     <p>Racing Cars is a ramp up project made for beginners. It should be used as a guide to help new team members to
@@ -33,103 +33,103 @@
     <img src='images/rest-gogh.jpeg' alt='A Sesta - Van Gogh (1890)' width="420" height="330">
     <span class='stead-img-info'>A Sesta - Van Gogh (1890)</span>
     <p>"Don't hate the hacker, hate the code." - Anonymous</p>
-    <p>Segundo a OWASP, cross-site scripting (XSS) é um tipo de ataque de injeção, que no caso códigos maliciosos são
-      injetados em outrora sites confiáveis. Vulnerabilidades que permitem esses ataques acontecerem são populares e
-      ocorrem sempre que uma aplicação não valida e/ou criptografa um input de dados do usuário para o sistema.
+    <p>According to OWASP, cross-site scripting (XSS) is a type of injection attack, in which malicious code is
+       injected into formerly trusted sites. Vulnerabilities that allow these attacks to happen are popular and
+       occur whenever an application fails to validate and/or encrypt a user data input to the system.
     </p>
-    <p>Um atacante pode usar XSS para enviar códigos maliciosos para um usuário desavisado. O navegador do usuário
-      final não tem como saber se o código é confiável e o executa. Dessa maneira o código malicioso poderá ter acesso
-      a quaisquer cookies, tokens ou dados sensíveis do usuário que são armazenados pelo navegador afetado. Em alguns
-      casos, pode ser que o usuário tenha o Document Object Model (DOM) alterado, comprometendo a usabilidade do site
-      e aumentando as chances de invasão.
+    <p>An attacker can use XSS to send malicious code to an unsuspecting user. The user's browser
+       final has no way of knowing if the code is trusted and executes it. In this way the malicious code can gain access
+       to any cookies, tokens or sensitive user data that are stored by the affected browser. In some
+       cases, the user may have the Document Object Model (DOM) altered, compromising the usability of the site
+       and increasing the chances of invasion.
     </p>
-    <h3>Tipos de Ataques XSS</h3>
-    <p>XSS Armazenado ou Persistente (Tipo 1): XSS Armazenado ocorre quando o código malicioso está armazenado no
-      servidor do site, nos bancos de dados, logs, mensagens, campo de comentários, etc.
+    <h3>Types of XSS attacks</h3>
+    <p>Stored or Persistent XSS (Type 1): Stored XSS occurs when malicious code is stored on the
+       website server, in databases, logs, messages, comments field, etc.
     </p>
-    <p>XSS Refletido ou Não-Persistente (Tipo 2): De acordo com OWASP, XSS Refletido ocorre quando o código malicioso
-      é armazenado fora do servidor, como em uma mensagem de erro, um resultado de busca ou qualquer resposta que
-      inclui algum tipo de dado que foi enviado para o servidor.
+    <p>Reflected or Non-Persistent (Type 2) XSS: According to OWASP, Reflected XSS occurs when malicious code
+       is stored outside the server, as in an error message, a search result, or any response that
+       includes some kind of data that was sent to the server.
     </p>
-    <p>XSS Baseado em DOM (Tipo 0): XSS baseado em DOM ocorre, segundo a OWASP, quando todo o ataque é feito pela
-      parte de interação do usuário com a aplicação Web.
+    <p>DOM-based XSS (Type 0): DOM-based XSS occurs, according to OWASP, when the entire attack is done by the
+       part of the user's interaction with the web application.
     </p>
-    <h3>Impactos do Cross-site Scripting</h3>
-    <p>Cross-site scripting é provavelmente um dos riscos mais prevalentes nas aplicações Web e mesmo assim é um dos
-      mais negligenciados. Os principais riscos estão associados ao fato que o usuário é diretamente afetado pela
-      invasão, sendo ele o principal vetor de ataque.
+    <h3>Impacts of Cross-site Scripting</h3>
+    <p>Cross-site scripting is probably one of the most prevalent risks in web applications, and yet it is one of the
+       most neglected. The main risks are associated with the fact that the user is directly affected by the
+       invasion, being the main attack vector.
     </p>
-    <p>Um dos principais vetores de ataque são os sequestros de contas legítimas, normalmente o atacante consegue
-      acesso roubando o cookie de sessão do usuário. Esse tipo de ataque faz com que o atacante tenha total acesso a
-      tudo o que esse usuário tem: dados privados e funcionalidades passíveis apenas para o usuário. Esse tipo de
-      ataque pode ser conduzido colocando scripts em campos vulneráveis da aplicação Web (XSS tipo 1).
+    <p>One of the main attack vectors is the hijacking of legitimate accounts, usually the attacker manages to
+       access by stealing the user's session cookie. This type of attack gives the attacker full access to
+       everything that user has: private data and functionality only accessible to the user. This kind of
+       attack can be conducted by placing scripts in vulnerable fields of the web application (XSS type 1).
     </p>
-    <p>Outro vetor de ataque comum é usar HTML e JavaScript para roubar as informações de acesso do usuário a
-      aplicação Web. Esse ataque pode ser efetuado realizando uma parte de engenharia social com uma cópia falsa da
-      página de login da aplicação Web juntamente com uma vulnerabilidade XSS para ser enviado as vítimas. Assim como
-      no caso do sequestro de contas, a vítima entra em uma página onde o código malicioso é executado mostrando uma
-      falsa tela de login. Se o usuário tentar fazer o login, as informações de acesso serão enviadas ao servidor do
-      atacante, onde ele poderá usar essas informações para ter acesso a conta da vítima.<br>Essa tática é a mais
-      benéfica para o atacante, sendo possível obter dados de acesso em texto puro ao invés de um cookie de sessão. Um
-      vetor de ataque extra inclui utilizar engenharia social para persuadir uma vítima a colocar dados de acesso em
-      formulários falsos, que geralmente rouba as credenciais da vítima.
+    <p>Another common attack vector is using HTML and JavaScript to steal user access information to
+      Web application. This attack can be carried out by performing a part of social engineering with a false copy of the
+      Web application login page along with an XSS vulnerability to be sent to victims. As
+      in the case of account hijacking, the victim enters a page where the malicious code is executed showing a
+      fake login screen. If the user tries to login, the access information will be sent to the server of the
+      attacker, where he can use this information to gain access to the victim's account.<br>This tactic is the most
+      beneficial to the attacker, being possible to obtain access data in plain text instead of a session cookie. One
+      Extra attack vector includes using social engineering to persuade a victim to put access data into
+      fake forms, which usually steals the victim's credentials.
     </p>
-    <p>os danos causados por XSS nas organizações podem ser diversos, fora os danos causados pelo ataque em si e por
-      outros que usam o XSS como base para ataques ainda mais devastadores. Um ataque bem sucedido pode impactar os
-      usuários e os funcionários de uma empresa, assim como a sua capacidade de gerar renda ou produção. Mesmo se uma
-      empresa nunca sofreu com ataques XSS, se as vulnerabilidades estão presentes na aplicação Web, isso já pode ser
-      o suficiente para impactar as relações públicas da empresa, ainda mais se essas vulnerabilidades são publicadas
-      em portais de segurança da informação ou em canais de notícias.
+    <p>the damage caused by XSS in organizations can be diverse, apart from the damage caused by the attack itself and by
+       others that use XSS as a basis for even more devastating attacks. A successful attack can impact the
+       a company's users and employees, as well as its ability to generate income or output. even if one
+       company has never suffered from XSS attacks, if the vulnerabilities are present in the web application, this can already be
+       enough to impact the company's public relations, even more so if these vulnerabilities are published
+       on information security portals or on news channels.
     </p>
-    <h3>Um Estudo de Caso</h3>
-    <p>Em 2005, um rapaz de 19 anos de idade lançou o vírus de computador conhecido como “Samy”. Talvez o vírus de
-      computador mais rápido da história que mudou a segurança na Internet para sempre.
+    <h3>A Case Study</h3>
+    <p>In 2005, a 19-year-old boy released the computer virus known as “Samy”. Maybe the virus
+       fastest computer in history that changed Internet security forever.
     </p>
-    <p>Na época, o MySpace permitia a utilização de código HTML para customização de perfil do usuário, isso ocasionou
-      uma falha grave na segurança do sistema permitindo que um usuário final, com algumas linhas de código
-      JavaScript, fizesse mudanças não esperadas na plataforma. Apesar do vírus se espalhar rapidamente, ele era
-      inofensivo. O maior impacto do vírus foi mostrar como os sites na época estavam mal configurados e expostos a
-      vulnerabilidades que as próprias empresas não tinham conhecimento.
+    <p>At the time, MySpace allowed the use of HTML code for user profile customization, which caused
+       a serious flaw in the security of the system allowing an end user, with a few lines of code
+       JavaScript, make unexpected changes to the platform. Although the virus spread quickly, it was
+       harmless. The biggest impact of the virus was to show how websites at the time were misconfigured and exposed to
+       vulnerabilities that the companies themselves were not aware of.
     </p>
-    <p>Na época, aproximadamente 80-90% dos sites poderiam sofrer com algum tipo de ataque XSS de acordo com a OWASP
-      (2015). Foram criados protocolos que poderiam ser seguidos para mitigar tais riscos e minimizar tais
-      vulnerabilidades. Após 10 anos, aproximadamente 47% dos sites podem sofrer com ataques XSS.
+    <p>At the time, approximately 80-90% of websites could suffer from some type of XSS attack according to OWASP.
+       (2015). Protocols were created that could be followed to mitigate such risks and minimize such
+       vulnerabilities. After 10 years, approximately 47% of websites may suffer from XSS attacks.
     </p>
-    <h3>Como se Proteger?</h3>
-    <p>A OWASP provém inúmeras listas de prevenção a aplicações Web, uma delas sendo contra ataques XSS e a todas as
-      suas variações.
+    <h3>How to protect yourself?</h3>
+    <p>OWASP provides numerous prevention lists for web applications, one of them being against XSS attacks and all
+       its variations.
     </p>
-    <p>Aqui você encontra o material: <a
+    <p>You can find the material here: <a
         href='https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md'>OWASP
         Cheat Sheet Series: XSS</a>
     </p>
     <br>
-    <p>Fonte: <a href='https://drive.google.com/file/d/1y-qbWG2uPpoMMWlzjrEel8pPySwdsbqR/view?usp=sharing'
+    <p>Source: <a href='https://drive.google.com/file/d/1y-qbWG2uPpoMMWlzjrEel8pPySwdsbqR/view?usp=sharing'
         target='_blank' rel='noopener noreferrer'>Segurança em Aplicações Web: Cross-site Scripting (XSS)</a></p>
     <span class='thin-line'></span>
-    <h2>Cobra, um jogo em JS</h2>
-    <p class='post-info'>29 de março de 2019 | Coding</p>
+    <h2>Cobra, a game in JS</h2>
+    <p class='post-info'>March, 29 of 2019 | Coding</p>
     <img src='images/cobra.png' alt='Cobra, um jogo em JS' width="420" height="462">
-    <p>Há alguns meses investi um tempo para aprimorar algumas habilidades em JS e nesse período desenvolvi um Space
-      Invaders, um jogo simples porém que acrescentou muito na minha dinâmica com a linguagem.
+    <p>A few months ago I invested some time to improve some JS skills and in that period I developed a Space
+       Invaders, a simple game that added a lot to my dynamics with the language.
     </p>
-    <p>Recentemente fiz o mesmo, porém, o jogo da vez é o famoso Snake game.</p>
-    <p>Dessa vez o jogo é mais simples, porém muito divertido de fazer e jogar, alguns quebra-cabeças de como a
-      serpente é gerada e como faze-lá andar.
+    <p>Recently I did the same, however, the game of the time is the famous Snake game.</p>
+    <p>This time the game is simpler, but very fun to make and play, some puzzles on how to
+       serpent is generated and how to make it walk.
     </p>
-    <p><a href='cobra/' target='_blank' rel='noopener noreferrer'>Clique aqui para jogar!</a></p>
+    <p><a href='cobra/' target='_blank' rel='noopener noreferrer'>Click here to play!</a></p>
     <span class='thin-line'></span>
-    <h2>Invasores do Espaço!</h2>
-    <p class='post-info'>29 de novembro de 2018 | Coding</p>
+    <h2>Space Invaders!</h2>
+    <p class='post-info'>November, 29 of 2018 | Coding</p>
     <img src='images/spaceinvaders.png' alt='Space invaders, jogo em JS' width="420" height="448">
-    <p>Nas últimas semanas, dediquei um tempo para estudar JS e combinar o útil ao agradável.</p>
-    <p>Para treinar alguns conceitos de programação decidi fazer um jogo muito popular, o Space Invaders. Tive
-      diversos desafios que normalmente não enfrento quando estou programando para tratamento de dados/métricas e
-      processamento de informações, como por exemplo, como saber que o invasor foi atingido pelo seu disparo? Como
-      fazer com que os elementos da tela não estourem para fora do mapa?<br>São questões como essa que faz o
-      desenvolvimento de software que te tiram da sua zona de conforto muito mais interessantes.
+    <p>In the last few weeks, I've taken the time to study JS and combine the useful with the pleasant.</p>
+    <p>To train some programming concepts I decided to make a very popular game, Space Invaders. I had
+       several challenges that I don't normally face when I'm programming for data handling/metrics and
+       information processing, such as how to know that the attacker was hit by your shot? How
+       make the screen elements not pop out of the map?<br>It's questions like this that make the
+       software development that take you out of your comfort zone much more interesting.
     </p>
-    <p><a href='space-invaders/' target='_blank' rel='noopener noreferrer'>Clique aqui para jogar!</a></p>
+    <p><a href='space-invaders/' target='_blank' rel='noopener noreferrer'>Click here to play!</a></p>
   </section>
   <footer>
     <div> <a href="https://www.linkedin.com/in/henriquegrana/" target="_blank"
