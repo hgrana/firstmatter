@@ -2,140 +2,191 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="First Matter is a website about my hobbies and work. You will mostly found things about coding, photography and sports.">
-  <title>First Matter</title>
-  <link rel="stylesheet" href="css/main.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description"
+      content="First Matter is a website about my hobbies and work. You will mostly found things about coding, photography and sports.">
+   <title>First Matter</title>
+   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="page-content">
-  <header>
-    <h1>First Matter</h1>
-    <span class="line"></span>
-  </header>
-  <section class="content">
-    <span class='thin-line'></span>
-    <h2>Racing Cars</h2>
-    <p class='post-info'>March 11, 2021 | Software Development</p>
-    <img src='images/the-promenade.jpg' alt="La Femme à l'ombrelle - Claude Monet (1875)" width="420" height="588">
-    <span class='stead-img-info'>La Femme à l'ombrelle - Claude Monet (1875)</span>
-    <p>Racing Cars is a ramp up project made for beginners. It should be used as a guide to help new team members to
-      understand the basics of Serverless and TypeScript.
-    </p>
-    <p>You can check it out here:
-      <a href='https://github.com/granaz/racing-cars' target='_blank' rel='noopener noreferrer'>Racing Cars on GitHub</a>
-    </p>
-    <span class='thin-line'></span>
-    <h2>XSS: The means, not the end.</h2>
-    <p class='post-info'>August 29, 2019 | Web Security</p>
-    <img src='images/rest-gogh.jpeg' alt='A Sesta - Van Gogh (1890)' width="420" height="330">
-    <span class='stead-img-info'>A Sesta - Van Gogh (1890)</span>
-    <p>"Don't hate the hacker, hate the code." - Anonymous</p>
-    <p>According to OWASP, cross-site scripting (XSS) is a type of injection attack, in which malicious code is
-       injected into formerly trusted sites. Vulnerabilities that allow these attacks to happen are popular and
-       occur whenever an application fails to validate and/or encrypt a user data input to the system.
-    </p>
-    <p>An attacker can use XSS to send malicious code to an unsuspecting user. The user's browser
-       final has no way of knowing if the code is trusted and executes it. In this way the malicious code can gain access
-       to any cookies, tokens or sensitive user data that are stored by the affected browser. In some
-       cases, the user may have the Document Object Model (DOM) altered, compromising the usability of the site
-       and increasing the chances of invasion.
-    </p>
-    <h3>Types of XSS attacks</h3>
-    <p>Stored or Persistent XSS (Type 1): Stored XSS occurs when malicious code is stored on the
-       website server, in databases, logs, messages, comments field, etc.
-    </p>
-    <p>Reflected or Non-Persistent (Type 2) XSS: According to OWASP, Reflected XSS occurs when malicious code
-       is stored outside the server, as in an error message, a search result, or any response that
-       includes some kind of data that was sent to the server.
-    </p>
-    <p>DOM-based XSS (Type 0): DOM-based XSS occurs, according to OWASP, when the entire attack is done by the
-       part of the user's interaction with the web application.
-    </p>
-    <h3>Impacts of Cross-site Scripting</h3>
-    <p>Cross-site scripting is probably one of the most prevalent risks in web applications, and yet it is one of the
-       most neglected. The main risks are associated with the fact that the user is directly affected by the
-       invasion, being the main attack vector.
-    </p>
-    <p>One of the main attack vectors is the hijacking of legitimate accounts, usually the attacker manages to
-       access by stealing the user's session cookie. This type of attack gives the attacker full access to
-       everything that user has: private data and functionality only accessible to the user. This kind of
-       attack can be conducted by placing scripts in vulnerable fields of the web application (XSS type 1).
-    </p>
-    <p>Another common attack vector is using HTML and JavaScript to steal user access information to
-      Web application. This attack can be carried out by performing a part of social engineering with a false copy of the
-      Web application login page along with an XSS vulnerability to be sent to victims. As
-      in the case of account hijacking, the victim enters a page where the malicious code is executed showing a
-      fake login screen. If the user tries to login, the access information will be sent to the server of the
-      attacker, where he can use this information to gain access to the victim's account.<br>This tactic is the most
-      beneficial to the attacker, being possible to obtain access data in plain text instead of a session cookie. One
-      Extra attack vector includes using social engineering to persuade a victim to put access data into
-      fake forms, which usually steals the victim's credentials.
-    </p>
-    <p>the damage caused by XSS in organizations can be diverse, apart from the damage caused by the attack itself and by
-       others that use XSS as a basis for even more devastating attacks. A successful attack can impact the
-       a company's users and employees, as well as its ability to generate income or output. even if one
-       company has never suffered from XSS attacks, if the vulnerabilities are present in the web application, this can already be
-       enough to impact the company's public relations, even more so if these vulnerabilities are published
-       on information security portals or on news channels.
-    </p>
-    <h3>A Case Study</h3>
-    <p>In 2005, a 19-year-old boy released the computer virus known as “Samy”. Maybe the virus
-       fastest computer in history that changed Internet security forever.
-    </p>
-    <p>At the time, MySpace allowed the use of HTML code for user profile customization, which caused
-       a serious flaw in the security of the system allowing an end user, with a few lines of code
-       JavaScript, make unexpected changes to the platform. Although the virus spread quickly, it was
-       harmless. The biggest impact of the virus was to show how websites at the time were misconfigured and exposed to
-       vulnerabilities that the companies themselves were not aware of.
-    </p>
-    <p>At the time, approximately 80-90% of websites could suffer from some type of XSS attack according to OWASP.
-       (2015). Protocols were created that could be followed to mitigate such risks and minimize such
-       vulnerabilities. After 10 years, approximately 47% of websites may suffer from XSS attacks.
-    </p>
-    <h3>How to protect yourself?</h3>
-    <p>OWASP provides numerous prevention lists for web applications, one of them being against XSS attacks and all
-       its variations.
-    </p>
-    <p>You can find the material here: <a
-        href='https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md'>OWASP
-        Cheat Sheet Series: XSS</a>
-    </p>
-    <br>
-    <p>Source: <a href='https://drive.google.com/file/d/1y-qbWG2uPpoMMWlzjrEel8pPySwdsbqR/view?usp=sharing'
-        target='_blank' rel='noopener noreferrer'>Segurança em Aplicações Web: Cross-site Scripting (XSS)</a></p>
-    <span class='thin-line'></span>
-    <h2>Cobra, a game in JS</h2>
-    <p class='post-info'>March 29, 2019 | Coding</p>
-    <img src='images/cobra.png' alt='Cobra, um jogo em JS' width="420" height="462">
-    <p>A few months ago I invested some time to improve some JS skills and in that period I developed a Space
-       Invaders, a simple game that added a lot to my dynamics with the language.
-    </p>
-    <p>Recently I did the same, however, the game of the time is the famous Snake game.</p>
-    <p>This time the game is simpler, but very fun to make and play, some puzzles on how to
-       serpent is generated and how to make it walk.
-    </p>
-    <p><a href='cobra/' target='_blank' rel='noopener noreferrer'>Click here to play!</a></p>
-    <span class='thin-line'></span>
-    <h2>Space Invaders!</h2>
-    <p class='post-info'>November 29, 2018 | Coding</p>
-    <img src='images/spaceinvaders.png' alt='Space invaders, jogo em JS' width="420" height="448">
-    <p>In the last few weeks, I've taken the time to study JS and combine the useful with the pleasant.</p>
-    <p>To train some programming concepts I decided to make a very popular game, Space Invaders. I had
-       several challenges that I don't normally face when I'm programming for data handling/metrics and
-       information processing, such as how to know that the attacker was hit by your shot? How
-       make the screen elements not pop out of the map?<br>It's questions like this that make the
-       software development that take you out of your comfort zone much more interesting.
-    </p>
-    <p><a href='space-invaders/' target='_blank' rel='noopener noreferrer'>Click here to play!</a></p>
-  </section>
-  <footer>
-    <div> <a href="https://www.linkedin.com/in/henriquegrana/" target="_blank"
-        rel='noopener noreferrer'>Linkedin</a><br> <a href="https://github.com/granaz" target="_blank"
-        rel='noopener noreferrer'>Github</a><br> </div>
-  </footer>
+   <header>
+      <h1>First Matter</h1>
+      <span class="line"></span>
+   </header>
+   <main class="content">
+      <span class='thin-line'></span>
+      <section>
+         <h2>Snake's Trail</h2>
+         <p class='post-info'>April 12, 2022 | Trip</p>
+         <img src='images/snakes-trail.jpg' alt="Snake's Trail">
+         <span class='stead-img-info'>Snake's Trail</span>
+         <p>
+            This is a famous Brazilian road that cuts through 2 states, São Paulo and Paraná.
+            This road is a must-do for any lover of motorcycle touring.<br/>
+            My plan will be to do this trip in 2 days, round trip in just one weekend.<br/>
+            The path would be as follows:<br/><br/>
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d931794.6166502235!2d-48.26939398584438!3d-24.177949309745244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e0!4m3!3m2!1d-22.7646177!2d-47.4343181!4m5!1s0x94c45c204f80a475%3A0xbf84941a7e5a7382!2sPorthal%20Rastro%20da%20Serpente%2C%20R.%20Cap.%20Calixto%20de%20Almeida%2C%20160%20-%20Vila%20Nova%20Capao%20Bonito%2C%20Cap%C3%A3o%20Bonito%20-%20SP%2C%2018304-046!3m2!1d-24.008029399999998!2d-48.3410404!4m5!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!3m2!1d-25.4372382!2d-49.2699727!5e0!3m2!1spt-BR!2sbr!4v1649770535804!5m2!1spt-BR!2sbr"
+               style="border:0;"
+               allowfullscreen=""
+               loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <br/>
+            <br/>
+            I would prefer to do it in the winter, as it doesn't rain as much as other seasons, so I'll program myself to do it until August.
+            <br/>
+            My motorcycle is a <a href="https://photos.app.goo.gl/GDFyQRJxZZxaUX8i9" target="_blank" rel="noopener noreferrer">2007 Yamaha XVS Drag Star</a>. It is a 650cc V-twin engine with 40HP and 52NM of torque.<br/>
+            It's range is safely 250km, beyond that I would be using the reserve tank, so I would have to stop to fill the tank a minimum of 3 times during the trip.<br/>
+            It's more than enough to do this travel as I use already did some trips with it.
+         </p>
+      </section>
+
+      <span class='thin-line'></span>
+
+      <section>
+         <h2>Racing Cars</h2>
+         <p class='post-info'>March 11, 2021 | Software Development</p>
+         <img src='images/the-promenade.jpg' alt="La Femme à l'ombrelle - Claude Monet (1875)">
+         <span class='stead-img-info'>La Femme à l'ombrelle - Claude Monet (1875)</span>
+         <p>Racing Cars is a ramp up project made for beginners. It should be used as a guide to help new team members to
+            understand the basics of Serverless and TypeScript.
+         </p>
+         <p>You can check it out here:
+            <a href='https://github.com/granaz/racing-cars' target='_blank' rel='noopener noreferrer'>Racing Cars on
+               GitHub</a>
+         </p>
+      </section>
+
+      <span class='thin-line'></span>
+
+      <section>
+         <h2>XSS: The means, not the end.</h2>
+         <p class='post-info'>August 29, 2019 | Web Security</p>
+         <img src='images/rest-gogh.jpeg' alt='A Sesta - Van Gogh (1890)' width="420" height="330">
+         <span class='stead-img-info'>A Sesta - Van Gogh (1890)</span>
+         <p>"Don't hate the hacker, hate the code." - Anonymous</p>
+         <p>According to OWASP, cross-site scripting (XSS) is a type of injection attack, in which malicious code is
+            injected into formerly trusted sites. Vulnerabilities that allow these attacks to happen are popular and
+            occur whenever an application fails to validate and/or encrypt a user data input to the system.
+         </p>
+         <p>An attacker can use XSS to send malicious code to an unsuspecting user. The user's browser
+            final has no way of knowing if the code is trusted and executes it. In this way the malicious code can gain
+            access
+            to any cookies, tokens or sensitive user data that are stored by the affected browser. In some
+            cases, the user may have the Document Object Model (DOM) altered, compromising the usability of the site
+            and increasing the chances of invasion.
+         </p>
+         <h3>Types of XSS attacks</h3>
+         <p>Stored or Persistent XSS (Type 1): Stored XSS occurs when malicious code is stored on the
+            website server, in databases, logs, messages, comments field, etc.
+         </p>
+         <p>Reflected or Non-Persistent (Type 2) XSS: According to OWASP, Reflected XSS occurs when malicious code
+            is stored outside the server, as in an error message, a search result, or any response that
+            includes some kind of data that was sent to the server.
+         </p>
+         <p>DOM-based XSS (Type 0): DOM-based XSS occurs, according to OWASP, when the entire attack is done by the
+            part of the user's interaction with the web application.
+         </p>
+         <h3>Impacts of Cross-site Scripting</h3>
+         <p>Cross-site scripting is probably one of the most prevalent risks in web applications, and yet it is one of the
+            most neglected. The main risks are associated with the fact that the user is directly affected by the
+            invasion, being the main attack vector.
+         </p>
+         <p>One of the main attack vectors is the hijacking of legitimate accounts, usually the attacker manages to
+            access by stealing the user's session cookie. This type of attack gives the attacker full access to
+            everything that user has: private data and functionality only accessible to the user. This kind of
+            attack can be conducted by placing scripts in vulnerable fields of the web application (XSS type 1).
+         </p>
+         <p>Another common attack vector is using HTML and JavaScript to steal user access information to
+            Web application. This attack can be carried out by performing a part of social engineering with a false copy of
+            the
+            Web application login page along with an XSS vulnerability to be sent to victims. As
+            in the case of account hijacking, the victim enters a page where the malicious code is executed showing a
+            fake login screen. If the user tries to login, the access information will be sent to the server of the
+            attacker, where he can use this information to gain access to the victim's account.<br>This tactic is the most
+            beneficial to the attacker, being possible to obtain access data in plain text instead of a session cookie. One
+            Extra attack vector includes using social engineering to persuade a victim to put access data into
+            fake forms, which usually steals the victim's credentials.
+         </p>
+         <p>the damage caused by XSS in organizations can be diverse, apart from the damage caused by the attack itself and
+            by
+            others that use XSS as a basis for even more devastating attacks. A successful attack can impact the
+            a company's users and employees, as well as its ability to generate income or output. even if one
+            company has never suffered from XSS attacks, if the vulnerabilities are present in the web application, this
+            can already be
+            enough to impact the company's public relations, even more so if these vulnerabilities are published
+            on information security portals or on news channels.
+         </p>
+         <h3>A Case Study</h3>
+         <p>In 2005, a 19-year-old boy released the computer virus known as “Samy”. Maybe the virus
+            fastest computer in history that changed Internet security forever.
+         </p>
+         <p>At the time, MySpace allowed the use of HTML code for user profile customization, which caused
+            a serious flaw in the security of the system allowing an end user, with a few lines of code
+            JavaScript, make unexpected changes to the platform. Although the virus spread quickly, it was
+            harmless. The biggest impact of the virus was to show how websites at the time were misconfigured and exposed
+            to
+            vulnerabilities that the companies themselves were not aware of.
+         </p>
+         <p>At the time, approximately 80-90% of websites could suffer from some type of XSS attack according to OWASP.
+            (2015). Protocols were created that could be followed to mitigate such risks and minimize such
+            vulnerabilities. After 10 years, approximately 47% of websites may suffer from XSS attacks.
+         </p>
+         <h3>How to protect yourself?</h3>
+         <p>OWASP provides numerous prevention lists for web applications, one of them being against XSS attacks and all
+            its variations.
+         </p>
+         <p>You can find the material here: <a
+               href='https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md'>OWASP
+               Cheat Sheet Series: XSS</a>
+         </p>
+         <br>
+         <p>Source: <a href='https://drive.google.com/file/d/1y-qbWG2uPpoMMWlzjrEel8pPySwdsbqR/view?usp=sharing'
+               target='_blank' rel='noopener noreferrer'>Segurança em Aplicações Web: Cross-site Scripting (XSS)</a></p>
+      </section>
+
+      <span class='thin-line'></span>
+
+      <section>
+         <h2>Cobra, a game in JS</h2>
+         <p class='post-info'>March 29, 2019 | Coding</p>
+         <img src='images/cobra.png' alt='Cobra, um jogo em JS' width="420" height="462">
+         <p>A few months ago I invested some time to improve some JS skills and in that period I developed a Space
+            Invaders, a simple game that added a lot to my dynamics with the language.
+         </p>
+         <p>Recently I did the same, however, the game of the time is the famous Snake game.</p>
+         <p>This time the game is simpler, but very fun to make and play, some puzzles on how to
+            serpent is generated and how to make it walk.
+         </p>
+         <p><a href='cobra/' target='_blank' rel='noopener noreferrer'>Click here to play!</a></p>
+      </section>
+
+      <span class='thin-line'></span>
+
+      <section>
+         <h2>Space Invaders!</h2>
+         <p class='post-info'>November 29, 2018 | Coding</p>
+         <img src='images/spaceinvaders.png' alt='Space invaders, jogo em JS' width="420" height="448">
+         <p>In the last few weeks, I've taken the time to study JS and combine the useful with the pleasant.</p>
+         <p>To train some programming concepts I decided to make a very popular game, Space Invaders. I had
+            several challenges that I don't normally face when I'm programming for data handling/metrics and
+            information processing, such as how to know that the attacker was hit by your shot? How
+            make the screen elements not pop out of the map?<br>It's questions like this that make the
+            software development that take you out of your comfort zone much more interesting.
+         </p>
+         <p><a href='space-invaders/' target='_blank' rel='noopener noreferrer'>Click here to play!</a></p>
+      </section>
+
+   </main>
+   <footer>
+      <div> <a href="https://www.linkedin.com/in/henriquegrana/" target="_blank"
+            rel='noopener noreferrer'>Linkedin</a><br> <a href="https://github.com/granaz" target="_blank"
+            rel='noopener noreferrer'>Github</a><br> </div>
+   </footer>
 </body>
 
 </html>
